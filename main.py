@@ -2,6 +2,7 @@ import hydra
 from omegaconf import OmegaConf, DictConfig
 
 from dataset import load_dataset
+from client import generate_client_function
 
 @hydra.main(config_path="conf", config_name="base", version_base=None)
 def main(cfg: DictConfig):
@@ -10,10 +11,9 @@ def main(cfg: DictConfig):
     
     # Prepare Dataset
     train_loaders, val_loaders, test_loader = load_dataset(cfg.num_clients, cfg.batch_size)
-    print(len(train_loaders), len(train_loaders[0].dataset))
     
     # Define Clients
-    
+    client_function = generate_client_function(train_loaders, val_loaders, cfg.num_classes)
 
 
 if __name__ == "__main__":
