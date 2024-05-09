@@ -54,6 +54,7 @@ class FlowerClient(fl.client.NumPyClient):
 def generate_client_function(train_loaders, val_loaders, num_classes):
     # Provides a client function that the server can evoke to spawn clients
     def client_function(client_id):
+        
         return FlowerClient(train_loaders[int(client_id)],
                             val_loaders[int(client_id)],
                             num_classes)

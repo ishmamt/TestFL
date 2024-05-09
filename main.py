@@ -4,6 +4,7 @@ import flwr as fl
 
 from dataset import load_dataset
 from client import generate_client_function
+from server import get_on_fit_config_function
 
 @hydra.main(config_path="conf", config_name="base", version_base=None)
 def main(cfg: DictConfig):
@@ -17,7 +18,13 @@ def main(cfg: DictConfig):
     client_function = generate_client_function(train_loaders, val_loaders, cfg.num_classes)
     
     # Define Strategy
-    strategy = fl.server.strategy.FedAVG()
+    strategy = fl.server.strategy.FedAvg(fraction_fit=0.0001, 
+                                         min_fit_clients=cfg.num_clients_per_round_fit, 
+                                         fraction_evaluate=0.0001, 
+                                         min_evaluate_clients=cfg.num_clients_per_round_eval, 
+                                         min_available_clients=cfg.num_clients, 
+                                         on_fit_config_fn=get_on_fit_config_function(cfg.config_fit),
+                                         on_evaluate_config_fn=)
     
     
 if __name__ == "__main__":
