@@ -17,7 +17,7 @@ def main(cfg: DictConfig):
     client_function = generate_client_function(train_loaders, val_loaders, cfg.num_classes)
     
     # Define Strategy
-    strategy = fl.server.strategy.FedAVG(fraction_fit=)
+    strategy = fl.server.strategy.FedAVG()
     
     
 if __name__ == "__main__":
