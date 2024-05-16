@@ -4,7 +4,7 @@ import flwr as fl
 
 from dataset import load_dataset
 from client import generate_client_function
-from server import get_on_fit_config_function
+from server import get_on_fit_config_function, get_eval_function
 
 @hydra.main(config_path="conf", config_name="base", version_base=None)
 def main(cfg: DictConfig):
@@ -24,7 +24,7 @@ def main(cfg: DictConfig):
                                          min_evaluate_clients=cfg.num_clients_per_round_eval, 
                                          min_available_clients=cfg.num_clients, 
                                          on_fit_config_fn=get_on_fit_config_function(cfg.config_fit),
-                                         on_evaluate_config_fn=)
+                                         on_evaluate_config_fn=get_eval_function(cfg.num_classes, test_loader))
     
     
 if __name__ == "__main__":
