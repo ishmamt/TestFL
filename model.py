@@ -35,7 +35,7 @@ def train(model, train_loader, optimizer, epochs, device):
     model.to(device)
     
     for epoch in range(epochs):
-        print(f"Epoch {epoch} / {len(epochs)}:\n")
+        print(f"Epoch {epoch} / {epochs}:\n")
         loop = tqdm(train_loader)
         
         for images, labels in loop:
@@ -46,7 +46,7 @@ def train(model, train_loader, optimizer, epochs, device):
             loss.backward()
             optimizer.step()
             
-            loop.set_postfix(f"Loss: {loss.item():.3f}")
+            loop.set_postfix({"loss": loss})
             
     print(f"Training finished.\n")
 
@@ -70,7 +70,7 @@ def test(model, test_loader, device):
             _, predicted = torch.max(outputs.data, 1)
             correct += (predicted == labels).sum().item()
             
-            loop.set_postfix(f"Loss: {loss.item():.3f}")
+            loop.set_postfix({"loss": loss})
     
     accuracy = correct / len(test_loader.dataset)
     

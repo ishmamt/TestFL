@@ -1,0 +1,159 @@
+[2024-05-16 11:13:14,581][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=3, round_timeout=None)
+[2024-05-16 11:13:16,838][flwr][INFO] - Flower VCE: Ray initialized with resources: {'memory': 7290254132.0, 'CPU': 16.0, 'object_store_memory': 3645127065.0, 'node:172.16.0.2': 1.0}
+[2024-05-16 11:13:16,838][flwr][INFO] - Initializing global parameters
+[2024-05-16 11:13:16,838][flwr][INFO] - Requesting initial parameters from one random client
+[2024-05-16 11:13:17,906][flwr][INFO] - Received initial parameters from one random client
+[2024-05-16 11:13:17,906][flwr][INFO] - Evaluating initial parameters
+[2024-05-16 11:13:17,906][flwr][INFO] - FL starting
+[2024-05-16 11:13:17,906][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 100)
+[2024-05-16 11:13:18,053][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13306, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:18,213][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13306, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:18,265][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13306, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:18,340][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13306, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:18,431][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13306, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:18,481][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13306, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:19,416][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13304, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:19,573][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13302, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:19,600][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13296, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:19,646][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13303, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 33, in fit
+    self.set_params(params)
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 25, in set_params
+    self.model.load_state_dict(state_dict, strict=True)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2189, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for CNN:
+	Missing key(s) in state_dict: "conv1.weight", "conv1.bias", "conv2.weight", "conv2.bias", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias", "fc3.weight", "fc3.bias".
+[2024-05-16 11:13:19,647][flwr][DEBUG] - fit_round 1 received 0 results and 10 failures

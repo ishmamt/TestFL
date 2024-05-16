@@ -2,9 +2,14 @@ import hydra
 from omegaconf import OmegaConf, DictConfig
 import flwr as fl
 
+import torch
+from collections import OrderedDict
+
 from dataset import load_dataset
 from client import generate_client_function
 from server import get_on_fit_config_function, get_eval_function
+
+from model import CNN
 
 @hydra.main(config_path="conf", config_name="base", version_base=None)
 def main(cfg: DictConfig):
@@ -24,7 +29,15 @@ def main(cfg: DictConfig):
                                          min_evaluate_clients=cfg.num_clients_per_round_eval, 
                                          min_available_clients=cfg.num_clients, 
                                          on_fit_config_fn=get_on_fit_config_function(cfg.config_fit),
-                                         on_evaluate_config_fn=get_eval_function(cfg.num_classes, test_loader))
+                                         evaluate_fn=get_eval_function(cfg.num_classes, test_loader))
+    
+    # Start Simulation
+    history = fl.simulation.start_simulation(
+        client_fn=client_function,
+        num_clients=cfg.num_clients,
+        config=fl.server.ServerConfig(num_rounds=cfg.num_rounds),
+        strategy=strategy
+    )
     
     
 if __name__ == "__main__":

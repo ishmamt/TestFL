@@ -1,0 +1,929 @@
+[2024-05-16 12:11:11,003][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=3, round_timeout=None)
+[2024-05-16 12:11:13,231][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 16.0, 'object_store_memory': 3500105318.0, 'node:172.16.0.2': 1.0, 'memory': 7000210638.0}
+[2024-05-16 12:11:13,231][flwr][INFO] - Initializing global parameters
+[2024-05-16 12:11:13,231][flwr][INFO] - Requesting initial parameters from one random client
+[2024-05-16 12:11:14,302][flwr][INFO] - Received initial parameters from one random client
+[2024-05-16 12:11:14,302][flwr][INFO] - Evaluating initial parameters
+[2024-05-16 12:11:15,003][flwr][INFO] - initial parameters (loss, other metrics): 721.4097464084625, {'accuracy': 0.1043}
+[2024-05-16 12:11:15,003][flwr][INFO] - FL starting
+[2024-05-16 12:11:15,003][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 100)
+[2024-05-16 12:11:15,236][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25510, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:15,513][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25510, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:15,541][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25510, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:15,586][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25510, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:16,364][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:16,755][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:16,770][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:16,771][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:16,803][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:16,827][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:16,828][flwr][DEBUG] - fit_round 1 received 0 results and 10 failures
+[2024-05-16 12:11:17,481][flwr][INFO] - fit progress: (1, 721.4097464084625, {'accuracy': 0.1043}, 2.477765347000968)
+[2024-05-16 12:11:17,481][flwr][DEBUG] - evaluate_round 1: strategy sampled 25 clients (out of 100)
+[2024-05-16 12:11:17,717][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:17,775][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:17,781][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:17,842][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:17,874][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,022][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,090][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,140][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,174][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,216][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,240][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,407][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,532][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,535][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,550][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,550][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,614][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,615][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,677][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,680][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,718][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,744][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,752][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,753][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,768][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:18,768][flwr][DEBUG] - evaluate_round 1 received 0 results and 25 failures
+[2024-05-16 12:11:18,769][flwr][DEBUG] - fit_round 2: strategy sampled 10 clients (out of 100)
+[2024-05-16 12:11:19,013][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,013][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,123][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,123][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,321][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,329][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,333][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,334][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,336][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,337][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:19,337][flwr][DEBUG] - fit_round 2 received 0 results and 10 failures
+[2024-05-16 12:11:19,994][flwr][INFO] - fit progress: (2, 721.4097464084625, {'accuracy': 0.1043}, 4.990820192000683)
+[2024-05-16 12:11:19,994][flwr][DEBUG] - evaluate_round 2: strategy sampled 25 clients (out of 100)
+[2024-05-16 12:11:20,215][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,224][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,316][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,398][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,419][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,489][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,513][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,536][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,559][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,584][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,683][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,858][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,980][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:20,981][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,029][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,048][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,071][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,073][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,091][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,154][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,185][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,186][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,189][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,190][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,208][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:21,208][flwr][DEBUG] - evaluate_round 2 received 0 results and 25 failures
+[2024-05-16 12:11:21,209][flwr][DEBUG] - fit_round 3: strategy sampled 10 clients (out of 100)
+[2024-05-16 12:11:21,416][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,421][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,478][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,482][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,645][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,667][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,670][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,693][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,693][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,694][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "/home/ishmam/Documents/Research/Federated Learning/TestFL/client.py", line 38, in fit
+    epochs = cfg["local_epochs"]
+KeyError: 'local_epochs'
+[2024-05-16 12:11:21,694][flwr][DEBUG] - fit_round 3 received 0 results and 10 failures
+[2024-05-16 12:11:22,352][flwr][INFO] - fit progress: (3, 721.4097464084625, {'accuracy': 0.1043}, 7.348247650999838)
+[2024-05-16 12:11:22,352][flwr][DEBUG] - evaluate_round 3: strategy sampled 25 clients (out of 100)
+[2024-05-16 12:11:22,571][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:22,604][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:22,619][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:22,648][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:22,953][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:22,967][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:22,999][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,036][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,057][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,057][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25510, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,057][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,057][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,062][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,136][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25510, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,261][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,340][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,385][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,525][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25515, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,529][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25510, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,530][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25521, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,530][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25524, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,531][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25511, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,532][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25519, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:23,534][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25516, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:24,500][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=25512, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-16 12:11:24,501][flwr][DEBUG] - evaluate_round 3 received 0 results and 25 failures
+[2024-05-16 12:11:24,502][flwr][INFO] - FL finished in 9.498307563999333
+[2024-05-16 12:11:24,502][flwr][INFO] - app_fit: losses_distributed []
+[2024-05-16 12:11:24,502][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-05-16 12:11:24,502][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-05-16 12:11:24,502][flwr][INFO] - app_fit: losses_centralized [(0, 721.4097464084625), (1, 721.4097464084625), (2, 721.4097464084625), (3, 721.4097464084625)]
+[2024-05-16 12:11:24,502][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(0, 0.1043), (1, 0.1043), (2, 0.1043), (3, 0.1043)]}

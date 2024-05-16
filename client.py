@@ -18,19 +18,20 @@ class FlowerClient(fl.client.NumPyClient):
         
         self.model = CNN(num_classes)
         
-    def set_params(self, params):
+    def set_parameters(self, params):
         # Update parameters of the model
         params_dict = zip(self.model.state_dict().keys(), params)
         state_dict = OrderedDict({k: torch.Tensor(v) for k, v in params_dict})
         self.model.load_state_dict(state_dict, strict=True)
     
-    def get_params(self):
+    def get_parameters(self, config):
         # Return the current parameters of the model
-        return [val.cpu().numpy() for _, val in self.model.state_dict.items()]
+        
+        return [val.cpu().numpy() for _, val in self.model.state_dict().items()]
     
     def fit(self, params, cfg):
         # Update parameters from the sever
-        self.set_params(params)
+        self.set_parameters(params)
         
         lr = cfg["lr"]
         momentum = cfg["momentum"]
@@ -40,11 +41,11 @@ class FlowerClient(fl.client.NumPyClient):
         # Local training
         train(self.model, self.train_loader, optim, epochs, self.device)
         
-        return self.get_params(), len(self.train_loader), {}  # len of loader is for FedAVG, dict is for additional info sent to server
+        return self.get_parameters({}), len(self.train_loader), {}  # len of loader is for FedAVG, dict is for additional info sent to server
     
     def evaluate(self, params):
         # Evaluate on the parameters sent by the server
-        self.set_params(params)
+        self.set_parameters(params)
         
         loss, accuracy = test(self.model, self.val_loader, self.device)
         

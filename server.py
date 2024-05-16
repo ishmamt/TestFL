@@ -11,7 +11,7 @@ def get_on_fit_config_function(cfg:DictConfig):
         
         return {"lr": cfg.lr, 
                 "momentum": cfg.momentum, 
-                "local_epoch": cfg.local_epoch}
+                "local_epochs": cfg.local_epochs}
     
     return on_fit_config_function
 
