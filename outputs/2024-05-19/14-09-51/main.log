@@ -1,0 +1,65 @@
+[2024-05-19 14:09:51,371][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=2, round_timeout=None)
+[2024-05-19 14:09:53,608][flwr][INFO] - Flower VCE: Ray initialized with resources: {'object_store_memory': 8208978739.0, 'memory': 16417957479.0, 'GPU': 1.0, 'node:127.0.0.1': 1.0, 'CPU': 20.0}
+[2024-05-19 14:09:53,609][flwr][INFO] - Initializing global parameters
+[2024-05-19 14:09:53,609][flwr][INFO] - Requesting initial parameters from one random client
+[2024-05-19 14:09:55,016][flwr][INFO] - Received initial parameters from one random client
+[2024-05-19 14:09:55,017][flwr][INFO] - Evaluating initial parameters
+[2024-05-19 14:09:57,738][flwr][INFO] - initial parameters (loss, other metrics): 721.3330798149109, {'accuracy': 0.1053}
+[2024-05-19 14:09:57,739][flwr][INFO] - FL starting
+[2024-05-19 14:09:57,739][flwr][DEBUG] - fit_round 1: strategy sampled 1 clients (out of 3)
+[2024-05-19 14:10:03,724][flwr][DEBUG] - fit_round 1 received 1 results and 0 failures
+[2024-05-19 14:10:03,728][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-05-19 14:10:06,318][flwr][INFO] - fit progress: (1, 46.71637303195894, {'accuracy': 0.9529}, 8.5793064)
+[2024-05-19 14:10:06,318][flwr][DEBUG] - evaluate_round 1: strategy sampled 2 clients (out of 3)
+[2024-05-19 14:10:06,392][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=12848, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-19 14:10:06,440][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=12848, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-19 14:10:06,441][flwr][DEBUG] - evaluate_round 1 received 0 results and 2 failures
+[2024-05-19 14:10:06,442][flwr][DEBUG] - fit_round 2: strategy sampled 1 clients (out of 3)
+[2024-05-19 14:10:12,181][flwr][DEBUG] - fit_round 2 received 1 results and 0 failures
+[2024-05-19 14:10:14,752][flwr][INFO] - fit progress: (2, 22.513279532227898, {'accuracy': 0.9777}, 17.012754)
+[2024-05-19 14:10:14,752][flwr][DEBUG] - evaluate_round 2: strategy sampled 2 clients (out of 3)
+[2024-05-19 14:10:14,875][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=12848, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-19 14:10:16,276][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=12644, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "D:\Anaconda\envs\fl\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-05-19 14:10:16,278][flwr][DEBUG] - evaluate_round 2 received 0 results and 2 failures
+[2024-05-19 14:10:16,278][flwr][INFO] - FL finished in 18.5398906
+[2024-05-19 14:10:16,279][flwr][INFO] - app_fit: losses_distributed []
+[2024-05-19 14:10:16,279][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-05-19 14:10:16,280][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-05-19 14:10:16,280][flwr][INFO] - app_fit: losses_centralized [(0, 721.3330798149109), (1, 46.71637303195894), (2, 22.513279532227898)]
+[2024-05-19 14:10:16,280][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(0, 0.1053), (1, 0.9529), (2, 0.9777)]}
