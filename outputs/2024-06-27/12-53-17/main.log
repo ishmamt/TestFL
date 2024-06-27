@@ -1,0 +1,102 @@
+[2024-06-27 12:53:17,824][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=3, round_timeout=None)
+[2024-06-27 12:53:20,083][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 16.0, 'object_store_memory': 3663490252.0, 'node:172.16.0.2': 1.0, 'memory': 7326980507.0}
+[2024-06-27 12:53:20,083][flwr][INFO] - Initializing global parameters
+[2024-06-27 12:53:20,083][flwr][INFO] - Requesting initial parameters from one random client
+[2024-06-27 12:53:21,134][flwr][INFO] - Received initial parameters from one random client
+[2024-06-27 12:53:21,134][flwr][INFO] - Evaluating initial parameters
+[2024-06-27 12:53:21,830][flwr][INFO] - initial parameters (loss, other metrics): 724.2297360897064, {'accuracy': 0.0686}
+[2024-06-27 12:53:21,830][flwr][INFO] - FL starting
+[2024-06-27 12:53:21,830][flwr][DEBUG] - fit_round 1: strategy sampled 1 clients (out of 10)
+[2024-06-27 12:53:22,866][flwr][DEBUG] - fit_round 1 received 1 results and 0 failures
+[2024-06-27 12:53:22,868][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-06-27 12:53:23,550][flwr][INFO] - fit progress: (1, 77.14551437087357, {'accuracy': 0.9262}, 1.7205966669998816)
+[2024-06-27 12:53:23,551][flwr][DEBUG] - evaluate_round 1: strategy sampled 3 clients (out of 10)
+[2024-06-27 12:53:23,710][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26341, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:24,720][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26354, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:24,729][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26353, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:24,730][flwr][DEBUG] - evaluate_round 1 received 0 results and 3 failures
+[2024-06-27 12:53:24,730][flwr][DEBUG] - fit_round 2: strategy sampled 1 clients (out of 10)
+[2024-06-27 12:53:25,691][flwr][DEBUG] - fit_round 2 received 1 results and 0 failures
+[2024-06-27 12:53:26,338][flwr][INFO] - fit progress: (2, 68.3547906554304, {'accuracy': 0.9347}, 4.508172339999874)
+[2024-06-27 12:53:26,338][flwr][DEBUG] - evaluate_round 2: strategy sampled 3 clients (out of 10)
+[2024-06-27 12:53:26,498][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26353, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:26,521][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26341, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:26,521][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26354, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:26,521][flwr][DEBUG] - evaluate_round 2 received 0 results and 3 failures
+[2024-06-27 12:53:26,521][flwr][DEBUG] - fit_round 3: strategy sampled 1 clients (out of 10)
+[2024-06-27 12:53:27,500][flwr][DEBUG] - fit_round 3 received 1 results and 0 failures
+[2024-06-27 12:53:28,154][flwr][INFO] - fit progress: (3, 40.159386586456094, {'accuracy': 0.9603}, 6.3243682909997005)
+[2024-06-27 12:53:28,154][flwr][DEBUG] - evaluate_round 3: strategy sampled 3 clients (out of 10)
+[2024-06-27 12:53:28,307][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26354, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:28,311][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26341, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:28,312][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=26353, ip=172.16.0.2)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/simulation/ray_transport/ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "/home/ishmam/anaconda3/envs/fl/lib/python3.8/site-packages/flwr/client/app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+TypeError: evaluate() takes 2 positional arguments but 3 were given
+[2024-06-27 12:53:28,312][flwr][DEBUG] - evaluate_round 3 received 0 results and 3 failures
+[2024-06-27 12:53:28,313][flwr][INFO] - FL finished in 6.482824331000302
+[2024-06-27 12:53:28,313][flwr][INFO] - app_fit: losses_distributed []
+[2024-06-27 12:53:28,313][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-06-27 12:53:28,313][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-06-27 12:53:28,313][flwr][INFO] - app_fit: losses_centralized [(0, 724.2297360897064), (1, 77.14551437087357), (2, 68.3547906554304), (3, 40.159386586456094)]
+[2024-06-27 12:53:28,313][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(0, 0.0686), (1, 0.9262), (2, 0.9347), (3, 0.9603)]}

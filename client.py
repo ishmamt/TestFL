@@ -43,7 +43,7 @@ class FlowerClient(fl.client.NumPyClient):
         
         return self.get_parameters({}), len(self.train_loader), {}  # len of loader is for FedAVG, dict is for additional info sent to server
     
-    def evaluate(self, params):
+    def evaluate(self, params, cfg):
         # Evaluate on the parameters sent by the server
         self.set_parameters(params)
         
