@@ -1,0 +1,31 @@
+[2024-07-08 16:30:23,533][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=3, round_timeout=None)
+[2024-07-08 16:30:25,548][flwr][INFO] - Flower VCE: Ray initialized with resources: {'GPU': 1.0, 'memory': 15532897076.0, 'CPU': 20.0, 'object_store_memory': 7766448537.0, 'node:127.0.0.1': 1.0}
+[2024-07-08 16:30:25,549][flwr][INFO] - Initializing global parameters
+[2024-07-08 16:30:25,549][flwr][INFO] - Requesting initial parameters from one random client
+[2024-07-08 16:30:26,975][flwr][INFO] - Received initial parameters from one random client
+[2024-07-08 16:30:26,976][flwr][INFO] - Evaluating initial parameters
+[2024-07-08 16:30:29,812][flwr][INFO] - initial parameters (loss, other metrics): 720.379652261734, {'accuracy': 0.114}
+[2024-07-08 16:30:29,812][flwr][INFO] - FL starting
+[2024-07-08 16:30:29,812][flwr][DEBUG] - fit_round 1: strategy sampled 1 clients (out of 10)
+[2024-07-08 16:30:32,985][flwr][DEBUG] - fit_round 1 received 1 results and 0 failures
+[2024-07-08 16:30:32,988][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-07-08 16:30:35,598][flwr][INFO] - fit progress: (1, 74.05339697562158, {'accuracy': 0.9299}, 5.7856243)
+[2024-07-08 16:30:35,599][flwr][DEBUG] - evaluate_round 1: strategy sampled 3 clients (out of 10)
+[2024-07-08 16:30:40,511][flwr][DEBUG] - evaluate_round 1 received 3 results and 0 failures
+[2024-07-08 16:30:40,511][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-07-08 16:30:40,512][flwr][DEBUG] - fit_round 2: strategy sampled 1 clients (out of 10)
+[2024-07-08 16:30:43,595][flwr][DEBUG] - fit_round 2 received 1 results and 0 failures
+[2024-07-08 16:30:46,228][flwr][INFO] - fit progress: (2, 43.38332834321773, {'accuracy': 0.9566}, 16.41601)
+[2024-07-08 16:30:46,229][flwr][DEBUG] - evaluate_round 2: strategy sampled 3 clients (out of 10)
+[2024-07-08 16:30:51,103][flwr][DEBUG] - evaluate_round 2 received 3 results and 0 failures
+[2024-07-08 16:30:51,104][flwr][DEBUG] - fit_round 3: strategy sampled 1 clients (out of 10)
+[2024-07-08 16:30:54,209][flwr][DEBUG] - fit_round 3 received 1 results and 0 failures
+[2024-07-08 16:30:56,857][flwr][INFO] - fit progress: (3, 50.325949091580696, {'accuracy': 0.9492}, 27.044632900000003)
+[2024-07-08 16:30:56,858][flwr][DEBUG] - evaluate_round 3: strategy sampled 3 clients (out of 10)
+[2024-07-08 16:31:01,842][flwr][DEBUG] - evaluate_round 3 received 3 results and 0 failures
+[2024-07-08 16:31:01,843][flwr][INFO] - FL finished in 32.0299721
+[2024-07-08 16:31:01,843][flwr][INFO] - app_fit: losses_distributed [(1, 9.966002646678438), (2, 5.741835899883881), (3, 6.85562857457747)]
+[2024-07-08 16:31:01,843][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-07-08 16:31:01,844][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-07-08 16:31:01,844][flwr][INFO] - app_fit: losses_centralized [(0, 720.379652261734), (1, 74.05339697562158), (2, 43.38332834321773), (3, 50.325949091580696)]
+[2024-07-08 16:31:01,844][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(0, 0.114), (1, 0.9299), (2, 0.9566), (3, 0.9492)]}

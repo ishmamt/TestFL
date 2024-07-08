@@ -1,15 +1,13 @@
 import hydra
+from hydra.core.hydra_config import HydraConfig
 from omegaconf import OmegaConf, DictConfig
 import flwr as fl
-
-import torch
-from collections import OrderedDict
+import os
+import pickle
 
 from dataset import load_dataset
 from client import generate_client_function
 from server import get_on_fit_config_function, get_eval_function
-
-from model import CNN
 
 @hydra.main(config_path="conf", config_name="base", version_base=None)
 def main(cfg: DictConfig):
@@ -36,8 +34,20 @@ def main(cfg: DictConfig):
         client_fn=client_function,
         num_clients=cfg.num_clients,
         config=fl.server.ServerConfig(num_rounds=cfg.num_rounds),
-        strategy=strategy
+        strategy=strategy,
+        client_resources={
+            "num_cpus": 2,
+            "num_gpus": 0.5
+        }
     )
+    
+    # Save simulation results
+    output_dir = HydraConfig.get().runtime.output_dir
+    results_output_dir = os.path.join(output_dir, "results.pkl")
+    results = {"history": history}
+    
+    with open(results_output_dir, 'wb') as f:
+        pickle.dump(results, f, protocol=pickle.HIGHEST_PROTOCOL)
     
     
 if __name__ == "__main__":
